@@ -12,7 +12,7 @@ This repository provides the data download scripts used in the MRTS project.
 ---
 
 ### Yahoo Finance
-- 5m, 1h, 1d, 1wk 
+- 5m, 15m, 30m, 1h, 1d, 1wk, 1mo
 
 **Equity ETFs**  
 - SPY, QQQ, IWM, DIA, VUG, VTV, XLK, XLF, XLE, XLV  
