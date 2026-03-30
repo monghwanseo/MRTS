@@ -2,17 +2,26 @@
 
 This repository provides the data download scripts used in the MRTS project.
 
-## Sources
+## Data Sources
 
-- **Binance**: Crypto (BTC, ETH, SOL, XRP, LINK, AVAX, ONDO, DOGE, SHIB, PEPE)  
-  - 1-minute OHLCV  
-  - From 2022-01-01 to present  
+### Binance (Crypto)
 
-- **Yahoo Finance**: ETF, stocks, commodities  
-  - 5m (60 days), 1h (730 days), 1d / 1wk (max history)  
+- BTC, ETH, SOL, XRP, LINK, AVAX, ONDO, DOGE, SHIB, PEPE  
+- 1-minute OHLCV, from 2022-01-01
 
-## Usage
+---
 
-```bash
-python download_binance.py
-python download_yahoo.py
+### Yahoo Finance
+
+**Equity ETFs**  
+- SPY, QQQ, IWM, DIA, VUG, VTV, XLK, XLF, XLE, XLV  
+
+**Individual Stocks**  
+- AAPL, MSFT, NVDA, AMZN, GOOGL, TSLA, JPM, XOM, JNJ, PG  
+
+**Commodities**  
+- GLD, SLV, USO, UNG, DBC, DBA, CORN, WEAT, SOYB, PPLT  
+
+- 5m, 1h, 1d, 1wk OHLCV data
+
+---
