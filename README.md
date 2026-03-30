@@ -1,59 +1,17 @@
-# MRTS: Mean Reversion Prediction with Shortcut Decomposition
+# MRTS Data
 
-This repository provides the data download pipeline used in the paper:
+This repository provides the data download scripts used in the MRTS project.
 
-**"Mean Reversion Prediction with Shortcut Decomposition"**
+## Sources
 
----
+- **Binance**: Crypto (BTC, ETH, SOL, XRP, LINK, AVAX, ONDO, DOGE, SHIB, PEPE)  
+  - 1-minute OHLCV  
+  - From 2022-01-01 to present  
 
-## Overview
+- **Yahoo Finance**: ETF, stocks, commodities  
+  - 5m (60 days), 1h (730 days), 1d / 1wk (max history)  
 
-This project studies whether mean reversion is truly predictable, or whether model performance is driven by deviation-based shortcut features.
-
----
-
-## Data Sources
-
-### Crypto (Binance)
-
-- Source: Binance public REST API
-- Assets:
-  - BTC, ETH, SOL, XRP, LINK, AVAX, ONDO, DOGE, SHIB, PEPE
-- Frequency:
-  - 1-minute OHLCV (raw data)
-- Sample period:
-  - From **2022-01-01** to the download time
-
----
-
-### Equity, ETF, Commodity (Yahoo Finance)
-
-- Source: Yahoo Finance via `yfinance`
-- Assets:
-  - Equity ETFs (10)
-  - Individual stocks (10)
-  - Commodities (10)
-
-- Frequencies:
-  - 5m (last 60 days)
-  - 1h (last 730 days)
-  - 1d (max available history, ~20 years)
-  - 1wk (max available history, ~20 years)
-
----
-
-## Important Note
-
-Due to data availability constraints:
-
-- Crypto data span a longer time period
-- Yahoo Finance data have **frequency-dependent sample windows**
-
----
-
-## Data Download
-
-Run the following scripts:
+## Usage
 
 ```bash
 python download_binance.py
